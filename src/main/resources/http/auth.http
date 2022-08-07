@@ -1,0 +1,56 @@
+POST http://localhost:8081/auth/public/registration
+Content-Type: application/json
+#Authorization: Bearer
+
+{
+  "name": "Sawash",
+  "surname": "Sawashov",
+  "phone": "998970070777",
+  "password": "1245"
+}
+
+
+###
+
+POST http://localhost:8080/auth/admBankPay/login
+Content-Type: application/json
+
+{
+  "username": "apelsin",
+  "password": "777"
+}
+
+###
+
+POST http://localhost:8081/auth/userAdm/login
+Content-Type: application/json
+
+{
+  "phone": "998972198989",
+  "password": "1245"
+}
+
+###
+
+POST http://localhost:8081/auth/userAdm/login
+Content-Type: application/json
+
+{
+  "phone": "988914640908",
+  "password": "1255"
+}
+
+###
+
+POST http://localhost:8081/auth/public/verification
+Content-Type: application/json
+
+{
+  "phone": "998970070777",
+  "code": 91178
+}
+
+###
+
+GET http://localhost:8081/auth/public/resend/998970070777
+Content-Type: application/json

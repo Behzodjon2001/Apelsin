@@ -1,0 +1,64 @@
+POST http://localhost:8081/card/user/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+{
+  "number": "8600682267453961"
+}
+
+###
+
+PUT http://localhost:8081/card/user/phoneUpdate/8600682267453961
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+{
+  "status": "NO_ACTIVE"
+}
+
+###
+
+GET localhost:8081/card/user/getCardId
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+###
+
+GET localhost:8081/card/payment/getCardPhone/+998972198989
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+###
+
+GET localhost:8081/card/payment/getCardClientId/40282ad1821fc32a01821fc57ea60004
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+###
+
+GET localhost:8081/card/payment/getCardNumber/8600682267453961
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+
+###
+
+GET localhost:8081/card/payment/getCardBalanceNumber/8600682267453961
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+###
+
+PUT localhost:8081/card/user/statusUpdate/8600682267453961
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwNDA0NDksImV4cCI6MTY1OTI1NjQ0OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQzZjAzZDAxODI0M2YxNzE2ZTAwMDEiLCJyb2xlIjoiUk9MRV9VU0VSIn0.MNUDV0DUp-qgIQg2OUZgdFLuM1kPEDmEFAJvxsma9pk
+
+{
+  "number": "8600682267453961",
+  "status": "BLOCK"
+}
+
+###
+
+POST http://localhost:8081/card/adm/filter
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgzOTAyNjcsImV4cCI6MTY1ODYwNjI2NywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyODJhZDE4MjFmYzExNTAxODIxZmMxNDBkZjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.uYjIEdlaV1RXPYux4mMBEBteh3vtsRalysRu_gyZhUU
+
+{
+  "phone": "+998972198989"
+}

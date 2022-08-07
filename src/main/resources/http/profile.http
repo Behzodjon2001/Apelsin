@@ -1,0 +1,37 @@
+POST http://localhost:8081/profile/admin/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwMDgwMTcsImV4cCI6MTY1OTIyNDAxNywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQ0OGU4YjAxODI0NDhlYmQ4NjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.G0DBUl1AlPgf3fAsz6HvWSn1xdx8YMWrmV93jQhCWAE
+
+{
+  "name": "Sardor",
+  "surname": "Sardorov",
+  "phone": "+998972198989",
+  "password": "2225",
+  "role" : "ROLE_USER"
+}
+
+###
+
+PUT http://localhost:8081/profile/admin/update/4028abd18244962b01824496e0110000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwMDgwMTcsImV4cCI6MTY1OTIyNDAxNywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQ0OGU4YjAxODI0NDhlYmQ4NjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.G0DBUl1AlPgf3fAsz6HvWSn1xdx8YMWrmV93jQhCWAE
+
+{
+  "name": "Sardor",
+  "surname": "Sardorov",
+  "phone": "998972198989",
+  "password": "2225",
+  "role" : "ROLE_USER"
+}
+
+###
+
+
+GET localhost:8081/profile/admin/getProfile/4028abd18244962b01824496e0110000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwMDgwMTcsImV4cCI6MTY1OTIyNDAxNywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQ0OGU4YjAxODI0NDhlYmQ4NjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.G0DBUl1AlPgf3fAsz6HvWSn1xdx8YMWrmV93jQhCWAE
+
+
+###
+
+DELETE http://localhost:8081/profile/admin/delete/4028abd18244962b01824496e0110000
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTkwMDgwMTcsImV4cCI6MTY1OTIyNDAxNywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoiNDAyOGFiZDE4MjQ0OGU4YjAxODI0NDhlYmQ4NjAwMDAiLCJyb2xlIjoiUk9MRV9BRE1JTiJ9.G0DBUl1AlPgf3fAsz6HvWSn1xdx8YMWrmV93jQhCWAE

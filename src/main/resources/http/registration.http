@@ -1,0 +1,21 @@
+POST http://localhost:8081/profile/public/registration
+Content-Type: application/json
+
+{
+  "name": "Sawash",
+  "surname": "Sawashov",
+  "phone": "+998972177777",
+  "password": "1245"
+}
+###
+
+POST http://localhost:8081/profile/public/registration
+Content-Type: application/json
+#Authorization: Bearer
+
+{
+  "name": "Sawash",
+  "surname": "Sawashov",
+  "phone": "998914640908",
+  "password": "1245"
+}
